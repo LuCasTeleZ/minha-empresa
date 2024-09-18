@@ -25,12 +25,16 @@
     color: #fff;
 }
 
+.cabecalho .menu {
+    display: none;
+}
+
 .main {
     padding: 30px 60px;
 }
 
 .btn {
-    width: 200px;
+    width: 250px;
     border: 2px black solid;
     border-radius: 4px;
     padding: 10px 20px;
@@ -38,6 +42,7 @@
     color: #fff;
     box-shadow: black 3px 3px 0px;
     cursor: pointer;
+    text-align: center;
 }
 
 .btn:hover {
@@ -50,4 +55,13 @@
     color: #fff;
     padding: 15px;
     text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+    .cabecalho nav{
+        display: none;
+    }
+    .cabecalho .menu{
+        display:flex
+    }
 }

@@ -42,3 +42,22 @@
 .newsletter form input {
     padding: 10px 6px;
 }
+
+
+/* como deixar a tela responsiva, portatil para todas as telas */
+@media screen and (max-width: 733px) {
+    .pai-dos-lados {
+        flex-direction: column-reverse;
+    }
+    .pai-dos-lados div {
+        width: 100%;
+    }
+ } 
+ 
+ @media screen and (max-width: 780px) {
+    .newsletter form{
+        display: flex;
+        flex-direction: column;
+        gap:6px;
+    }   
+ }
