@@ -7,6 +7,10 @@
     text-decoration: none;
 }
 
+body {
+    background: linear-gradient(to top, #000, white);
+}
+
 .cabecalho {
     display: flex;
     justify-content: space-between;
@@ -14,6 +18,10 @@
     background-color: #333;
     color: #fff;
     padding: 30px 60px;
+}
+
+.cabecalho h1{
+    animation: move 5s;
 }
 
 .cabecalho ul {
@@ -68,10 +76,31 @@
 
 /* projetin massivo de quarta feira */
 .cabecalho ul li a:hover {
+    background-color: gray;
     color:navajowhite;
 }
+
+.cabecalho nav ul li .selected {
+    background-color: gray;
+    color: blanchedalmond;
+}
+
 @media screen and  (max-width: 650px) {
     .main{
         padding: 10px;
+    }
+}
+
+/* ANIMAÇÕES CSS*/
+
+
+@keyframes move{
+    0% {
+        transform: translate(-500px);
+        color: black;
+    }
+
+    100% {
+        transform: translate(0px);
     }
 }

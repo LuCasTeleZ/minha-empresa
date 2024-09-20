@@ -1,0 +1,14 @@
+body {
+    background-image: url(../img/arthur-hutterer-9gQvO4dPCIM-unsplash.jpg);
+    background-repeat: no-repeat; /* não repetir imagem de fundo */
+    background-position: center;
+    background-size: cover;
+    color: aliceblue;
+    backdrop-filter: blur(2px);
+}
+
+.main .forma-contato{
+    text-align: center;
+    color: cornsilk;
+}
+
